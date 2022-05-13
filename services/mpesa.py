@@ -25,6 +25,7 @@ class Mpesa:
         response = requests.request(
             "GET", url, data=payload, headers=headers, params=querystring)
         data = response.json()
+        print(data)
         access_token = data['access_token']
         return access_token
         
