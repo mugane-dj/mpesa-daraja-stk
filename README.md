@@ -1,4 +1,4 @@
-# A simple STK-Push in Python using MPESA Daraja API 
+# A simple python script for making an STK-Push using MPESA Daraja API
 
 ## Prerequisities
 1. Python 3.x
@@ -30,7 +30,7 @@
     PHONE_NUMBER=
     PASSKEY=bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
     ```
-    Use the passkey provided above or password provided in [sandbox](https://developer.safaricom.co.ke/). 
+    Use the public passkey provided above or password provided in [sandbox](https://developer.safaricom.co.ke/). 
     ### Sample output on success
     ```
     {
