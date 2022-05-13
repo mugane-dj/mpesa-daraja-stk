@@ -1,4 +1,4 @@
-# A simple STK-Push using MPESA Daraja API in Python 
+# A simple python script for making an STK-Push using MPESA Daraja API
 
 ## Prerequisities
 1. Python 3.x
