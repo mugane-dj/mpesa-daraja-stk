@@ -85,8 +85,9 @@ class Mpesa:
 
         response = requests.request(
             "POST", url, json=request_body, headers=headers, params=query_string
-        )
-        print(response.text)
+        ).json()
+        return response['ResponseCode']
+
 
 if __name__ == '__main__':
     a = Mpesa()
