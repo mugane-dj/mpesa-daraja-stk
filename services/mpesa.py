@@ -24,8 +24,7 @@ class Mpesa:
 
         response = requests.request(
             "GET", url, data=payload, headers=headers, params=querystring)
-        data = response.json()
-        print(data)
+        data = response.json()  
         access_token = data['access_token']
         return access_token
         
@@ -50,7 +49,7 @@ class Mpesa:
         :return: The encoded password is being returned.
         """
         BusinessShortCode = os.getenv('BUSINESS_CODE')
-        timestamp = self.time_stamp()
+        timestamp = self.Timestamp
         passkey = os.getenv('PASSKEY')
         password_bytes = (BusinessShortCode + passkey + timestamp).encode('utf-8')
         base_64_encoded_string = base64.b64encode(password_bytes)
@@ -75,8 +74,8 @@ class Mpesa:
             "PartyB": os.getenv('BUSINESS_CODE'),
             "PhoneNumber": os.getenv('PHONE_NUMBER'),
             "CallBackURL": "https://darajambili.herokuapp.com/express-payment",
-            "AccountReference": "Test",
-            "TransactionDesc": "Test"
+            "AccountReference": "0112356789",
+            "TransactionDesc": "Pay bill"
         }
 
         headers = {
