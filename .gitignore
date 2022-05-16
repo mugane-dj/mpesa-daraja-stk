@@ -24,7 +24,6 @@ var/
 bin/
 wheels/
 share/
-share/doc/networkx-2.8/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
